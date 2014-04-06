@@ -1,0 +1,16 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY panelmenu.label            "For Panel Menu only">
+
+<!ENTITY bookmarkthispage.label     "Bookmark This Page">
+<!ENTITY viewbookmarkssidebar.label "View Bookmarks Sidebar">
+<!ENTITY viewbookmarkstoolbar.label "View Bookmarks Toolbar">
+<!ENTITY subscribetothispage.label  "Subscribe to This Page">
+<!ENTITY bookmarkstoolbar.label     "Bookmarks Toolbar">
+<!ENTITY unsortedbookmarks.label    "Unsorted Bookmarks">
+<!ENTITY showallbookmarks.label     "Show All Bookmarks">
+<!ENTITY default.label              "Default">
+<!ENTITY showlabelonly.label        "Show label only (without keyboard shortcut)">
+<!ENTITY hideall.label              "Hide all">

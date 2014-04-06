@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{8e1651be-1f0f-469e-baaa-003bf71d973c}</em:id>
+    <em:type>2</em:type>
+    <em:name>Simple bookmarks menu</em:name>
+    <em:version>0.2</em:version>
+    <em:description>Hide unnecessary items in the bookmarks menu.</em:description>
+    <em:homepageURL>https://github.com/seleznev/firefox-extension-simple-bookmarks-menu</em:homepageURL>
+    <em:creator>Alexander Seleznev</em:creator>
+
+    <em:bootstrap>true</em:bootstrap>
+
+    <em:optionsURL>chrome://simple-bookmarks-menu/content/settings.xul</em:optionsURL>
+    <em:optionsType>2</em:optionsType>
+
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>29.0</em:minVersion>
+        <em:maxVersion>31.0a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+  </Description>
+</RDF>

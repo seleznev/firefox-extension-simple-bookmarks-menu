@@ -1,0 +1,3 @@
+content  simple-bookmarks-menu         chrome/content/
+
+locale   simple-bookmarks-menu  en-US  chrome/locale/en-US/
