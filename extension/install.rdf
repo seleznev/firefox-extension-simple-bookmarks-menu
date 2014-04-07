@@ -7,7 +7,7 @@
     <em:id>{8e1651be-1f0f-469e-baaa-003bf71d973c}</em:id>
     <em:type>2</em:type>
     <em:name>Simple bookmarks menu</em:name>
-    <em:version>0.2</em:version>
+    <em:version>0.3</em:version>
     <em:description>Hide unnecessary items in the bookmarks menu.</em:description>
     <em:homepageURL>https://github.com/seleznev/firefox-extension-simple-bookmarks-menu</em:homepageURL>
     <em:creator>Alexander Seleznev</em:creator>
