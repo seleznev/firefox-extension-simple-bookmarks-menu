@@ -4,13 +4,9 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!DOCTYPE window SYSTEM "chrome://simple-bookmarks-menu/locale/settings.dtd">
+<!DOCTYPE window SYSTEM "chrome://simple-bookmarks-menu/locale/options.dtd">
 
-<window
-    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-    width="1"
-    height="1"
-    onload="window.close();">
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <setting pref="extensions.simple-bookmarks-menu.bookmark-this-page"
            type="bool" title="&bookmarkthispage.label;" desc="&panelmenu.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.view-bookmarks-sidebar"
@@ -33,4 +29,4 @@
     </vbox>
     </radiogroup>
   </setting>
-</window>
+</vbox>
