@@ -16,11 +16,11 @@
   <setting pref="extensions.simple-bookmarks-menu.view-bookmarks-sidebar"
            type="bool" title="&viewbookmarkssidebar.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.view-bookmarks-toolbar"
-           type="bool" title="&viewbookmarkstoolbar.label;"/>
+           type="bool" title="&viewbookmarkstoolbar.label;" desc="&panelmenu.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.subscribe-to-this-page"
            type="bool" title="&subscribetothispage.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.bookmarks-toolbar"
-           type="bool" title="&bookmarkstoolbar.label;" desc="&panelmenu.label;"/>
+           type="bool" title="&bookmarkstoolbar.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.unsorted-bookmarks"
            type="bool" title="&unsortedbookmarks.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.show-all-bookmarks"
