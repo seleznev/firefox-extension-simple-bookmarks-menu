@@ -12,6 +12,13 @@
     <em:homepageURL>https://github.com/seleznev/firefox-extension-simple-bookmarks-menu</em:homepageURL>
     <em:creator>Alexander Seleznev</em:creator>
 
+    <em:localized>
+      <Description em:locale="ru-RU">
+        <em:name>Simple bookmarks menu</em:name>
+        <em:description>Скрывает ненужные пункты в меню закладок.</em:description>
+      </Description>
+    </em:localized>
+
     <em:bootstrap>true</em:bootstrap>
 
     <em:targetApplication>
