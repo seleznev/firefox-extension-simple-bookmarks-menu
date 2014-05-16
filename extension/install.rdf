@@ -13,7 +13,7 @@
     <em:creator>Alexander Seleznev</em:creator>
 
     <em:localized>
-      <Description em:locale="ru-RU">
+      <Description em:locale="ru">
         <em:name>Simple bookmarks menu</em:name>
         <em:description>Скрывает ненужные пункты в меню закладок.</em:description>
       </Description>
