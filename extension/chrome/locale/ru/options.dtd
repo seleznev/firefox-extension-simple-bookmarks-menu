@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY panelmenu.label            "Доступно только при помещении кнопки в меню">
+<!ENTITY panelmenu.label            "Доступно, только если кнопка находится в меню">
 <!ENTITY duplicatetop.label         "Продублированный наверху пункт">
 
 <!ENTITY viewbookmarkssidebar.label "Показать боковую панель закладок">
