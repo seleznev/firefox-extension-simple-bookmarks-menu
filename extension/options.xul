@@ -9,6 +9,8 @@
 <vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <setting pref="extensions.simple-bookmarks-menu.view-bookmarks-sidebar"
            type="bool" title="&viewbookmarkssidebar.label;"/>
+  <setting pref="extensions.simple-bookmarks-menu.show-all-bookmarks-top"
+           type="bool" title="&showallbookmarks.label;" desc="&duplicatetop.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.subscribe-to-this-page"
            type="bool" title="&subscribetothispage.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.bookmarks-toolbar"

@@ -14,6 +14,7 @@ const STYLESHEET_FOOTER = "}";
 
 const DefaultPrefs = {
     "view-bookmarks-sidebar": false,
+    "show-all-bookmarks-top": false,
     "subscribe-to-this-page": false,
     "bookmarks-toolbar": false,
     "view-bookmarks-toolbar": false,
@@ -79,6 +80,14 @@ var SimpleBookmarksMenu = {
             h_rules.push("#panelMenu_viewBookmarksSidebar");
         }
 
+        var sbt = this.prefs.getBoolPref("show-all-bookmarks-top");
+        if (sbt === false) {
+            h_rules.push("#BMB_bookmarksShowAllTop");
+            if (vbs === false) {
+                h_rules.push("#BMB_bookmarksShowAllTop + menuseparator");
+            }
+        }
+
         if (this.prefs.getBoolPref("subscribe-to-this-page") === false) {
             h_rules.push("#BMB_subscribeToPageMenuitem");
             h_rules.push("#BMB_subscribeToPageMenuitem + menuseparator");
@@ -92,26 +101,22 @@ var SimpleBookmarksMenu = {
             h_rules.push("#panelMenu_bookmarksToolbar");
         }
 
-        var vbt = this.prefs.getBoolPref("view-bookmarks-toolbar");
-        if (vbt === false) {
+        if (this.prefs.getBoolPref("view-bookmarks-toolbar") === false) {
             h_rules.push("#BMB_viewBookmarksToolbar");
             h_rules.push("#BMB_viewBookmarksToolbar + menuseparator");
             h_rules.push("#panelMenu_viewBookmarksToolbar");
+            if (vbs === false && sbt === false) {
+                h_rules.push("#panelMenu_viewBookmarksToolbar + toolbarseparator");
+            }
         }
 
-        if (vbs === false && vbt === false) {
-            h_rules.push("#panelMenu_viewBookmarksToolbar + toolbarseparator");
-        }
-
-        var ub = this.prefs.getBoolPref("unsorted-bookmarks");
-        if (ub === false) {
+        if (this.prefs.getBoolPref("unsorted-bookmarks") === false) {
             h_rules.push("#BMB_unsortedBookmarks");
             h_rules.push("#panelMenu_unsortedBookmarks");
-        }
-
-        if (bt === false && ub === false) {
-            h_rules.push("#BMB_unsortedBookmarks + menuseparator");
-            h_rules.push("#panelMenu_unsortedBookmarks + toolbarseparator");
+            if (bt === false) {
+                h_rules.push("#BMB_unsortedBookmarks + menuseparator");
+                h_rules.push("#panelMenu_unsortedBookmarks + toolbarseparator");
+            }
         }
 
         var sab = this.prefs.getIntPref("show-all-bookmarks");

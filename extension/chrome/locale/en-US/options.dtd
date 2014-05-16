@@ -3,6 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY panelmenu.label            "For Panel Menu only">
+<!ENTITY duplicatetop.label         "Duplicate item at the top">
 
 <!ENTITY viewbookmarkssidebar.label "View Bookmarks Sidebar">
 <!ENTITY subscribetothispage.label  "Subscribe to This Page">
