@@ -7,16 +7,14 @@
 <!DOCTYPE window SYSTEM "chrome://simple-bookmarks-menu/locale/options.dtd">
 
 <vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-  <setting pref="extensions.simple-bookmarks-menu.bookmark-this-page"
-           type="bool" title="&bookmarkthispage.label;" desc="&panelmenu.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.view-bookmarks-sidebar"
            type="bool" title="&viewbookmarkssidebar.label;"/>
-  <setting pref="extensions.simple-bookmarks-menu.view-bookmarks-toolbar"
-           type="bool" title="&viewbookmarkstoolbar.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.subscribe-to-this-page"
            type="bool" title="&subscribetothispage.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.bookmarks-toolbar"
            type="bool" title="&bookmarkstoolbar.label;"/>
+  <setting pref="extensions.simple-bookmarks-menu.view-bookmarks-toolbar"
+           type="bool" title="&viewbookmarkstoolbar.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.unsorted-bookmarks"
            type="bool" title="&unsortedbookmarks.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.show-all-bookmarks"
@@ -29,4 +27,6 @@
     </vbox>
     </radiogroup>
   </setting>
+  <setting pref="extensions.simple-bookmarks-menu.bookmark-this-page"
+           type="bool" title="&bookmarkthispage.label;" desc="&panelmenu.label;"/>
 </vbox>

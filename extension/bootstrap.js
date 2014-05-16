@@ -13,14 +13,13 @@ const STYLESHEET_HEADER = "@-moz-document url(\"chrome://browser/content/browser
 const STYLESHEET_FOOTER = "}";
 
 const DefaultPrefs = {
-    "bookmark-this-page": true,
     "view-bookmarks-sidebar": false,
-    "view-bookmarks-toolbar": false,
     "subscribe-to-this-page": false,
     "bookmarks-toolbar": false,
+    "view-bookmarks-toolbar": false,
     "unsorted-bookmarks": false,
     "show-all-bookmarks": 1,
-    "keyboard-shortcuts": false,
+    "bookmark-this-page": true,
 }
 
 var SimpleBookmarksMenu = {
@@ -72,27 +71,11 @@ var SimpleBookmarksMenu = {
     genStyleSheet: function() {
         var src = XUL_NAMESPACE + "\n" + STYLESHEET_HEADER + "\n";
 
-        if (this.prefs.getBoolPref("bookmark-this-page") === false) {
-            src = src + "#panelMenuBookmarkThisPage {display: none !important;}" + "\n";
-            src = src + "#panelMenuBookmarkThisPage + toolbarseparator {display: none !important;}" + "\n";
-        }
-
         var vbs = this.prefs.getBoolPref("view-bookmarks-sidebar");
         if (vbs === false) {
             src = src + "#BMB_viewBookmarksSidebar {display: none !important;}" + "\n";
             src = src + "#BMB_viewBookmarksSidebar + menuseparator {display: none !important;}" + "\n";
             src = src + "#panelMenu_viewBookmarksSidebar {display: none !important;}" + "\n";
-        }
-
-        var vbt = this.prefs.getBoolPref("view-bookmarks-toolbar");
-        if (vbt === false) {
-            src = src + "#BMB_viewBookmarksToolbar {display: none !important;}" + "\n";
-            src = src + "#BMB_viewBookmarksToolbar + toolbarseparator {display: none !important;}" + "\n";
-            src = src + "#panelMenu_viewBookmarksToolbar {display: none !important;}" + "\n";
-        }
-
-        if (vbs === false && vbt === false) {
-            src = src + "#panelMenu_viewBookmarksToolbar + toolbarseparator {display: none !important;}" + "\n";
         }
 
         if (this.prefs.getBoolPref("subscribe-to-this-page") === false) {
@@ -103,6 +86,17 @@ var SimpleBookmarksMenu = {
         var bt = this.prefs.getBoolPref("bookmarks-toolbar");
         if (bt === false) {
             src = src + "#BMB_bookmarksToolbar, #panelMenu_bookmarksToolbar {display: none !important;}" + "\n";
+        }
+
+        var vbt = this.prefs.getBoolPref("view-bookmarks-toolbar");
+        if (vbt === false) {
+            src = src + "#BMB_viewBookmarksToolbar {display: none !important;}" + "\n";
+            src = src + "#BMB_viewBookmarksToolbar + menuseparator {display: none !important;}" + "\n";
+            src = src + "#panelMenu_viewBookmarksToolbar {display: none !important;}" + "\n";
+        }
+
+        if (vbs === false && vbt === false) {
+            src = src + "#panelMenu_viewBookmarksToolbar + toolbarseparator {display: none !important;}" + "\n";
         }
 
         var ub = this.prefs.getBoolPref("unsorted-bookmarks");
@@ -123,6 +117,11 @@ var SimpleBookmarksMenu = {
         else if (sab === 1) {
             src = src + "#BMB_bookmarksShowAll .menu-accel-container {display: none !important;}" + "\n";
             src = src + "#BMB_bookmarksShowAll { text-align: center; -moz-margin-start: -18px !important;}" + "\n";
+        }
+
+        if (this.prefs.getBoolPref("bookmark-this-page") === false) {
+            src = src + "#panelMenuBookmarkThisPage {display: none !important;}" + "\n";
+            src = src + "#panelMenuBookmarkThisPage + toolbarseparator {display: none !important;}" + "\n";
         }
 
         src = src + STYLESHEET_FOOTER;
