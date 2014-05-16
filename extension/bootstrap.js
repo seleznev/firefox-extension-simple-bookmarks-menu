@@ -86,6 +86,8 @@ var SimpleBookmarksMenu = {
 
         var vbt = this.prefs.getBoolPref("view-bookmarks-toolbar");
         if (vbt === false) {
+            src = src + "#BMB_viewBookmarksToolbar {display: none !important;}" + "\n";
+            src = src + "#BMB_viewBookmarksToolbar + toolbarseparator {display: none !important;}" + "\n";
             src = src + "#panelMenu_viewBookmarksToolbar {display: none !important;}" + "\n";
         }
 
