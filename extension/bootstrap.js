@@ -144,10 +144,10 @@ var SimpleBookmarksMenu = {
                        .getService(Components.interfaces.nsIPrefService)
                        .getBranch(this.PREF_BRANCH);
 
-        this.prefs.addObserver("", this, false);
-
         this.stylesheet = this.genStyleSheet();
         this.loadStyle(this.stylesheet);
+
+        this.prefs.addObserver("", this, false);
     },
 
     uninit: function() {
