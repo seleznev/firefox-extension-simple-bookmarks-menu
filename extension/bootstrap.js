@@ -70,61 +70,70 @@ var SimpleBookmarksMenu = {
 
     genStyleSheet: function() {
         var src = XUL_NAMESPACE + "\n" + STYLESHEET_HEADER + "\n";
+        var h_rules = [];
 
         var vbs = this.prefs.getBoolPref("view-bookmarks-sidebar");
         if (vbs === false) {
-            src = src + "#BMB_viewBookmarksSidebar {display: none !important;}" + "\n";
-            src = src + "#BMB_viewBookmarksSidebar + menuseparator {display: none !important;}" + "\n";
-            src = src + "#panelMenu_viewBookmarksSidebar {display: none !important;}" + "\n";
+            h_rules.push("#BMB_viewBookmarksSidebar");
+            h_rules.push("#BMB_viewBookmarksSidebar + menuseparator");
+            h_rules.push("#panelMenu_viewBookmarksSidebar");
         }
 
         if (this.prefs.getBoolPref("subscribe-to-this-page") === false) {
-            src = src + "#BMB_subscribeToPageMenuitem, #BMB_subscribeToPageMenupopup {display: none !important;}" + "\n";
-            src = src + ":-moz-any(#BMB_subscribeToPageMenuitem, #BMB_subscribeToPageMenupopup) + menuseparator {display: none !important;}" + "\n";
+            h_rules.push("#BMB_subscribeToPageMenuitem");
+            h_rules.push("#BMB_subscribeToPageMenuitem + menuseparator");
+            h_rules.push("#BMB_subscribeToPageMenupopup");
+            h_rules.push("#BMB_subscribeToPageMenupopup + menuseparator");
         }
 
         var bt = this.prefs.getBoolPref("bookmarks-toolbar");
         if (bt === false) {
-            src = src + "#BMB_bookmarksToolbar, #panelMenu_bookmarksToolbar {display: none !important;}" + "\n";
+            h_rules.push("#BMB_bookmarksToolbar");
+            h_rules.push("#panelMenu_bookmarksToolbar");
         }
 
         var vbt = this.prefs.getBoolPref("view-bookmarks-toolbar");
         if (vbt === false) {
-            src = src + "#BMB_viewBookmarksToolbar {display: none !important;}" + "\n";
-            src = src + "#BMB_viewBookmarksToolbar + menuseparator {display: none !important;}" + "\n";
-            src = src + "#panelMenu_viewBookmarksToolbar {display: none !important;}" + "\n";
+            h_rules.push("#BMB_viewBookmarksToolbar");
+            h_rules.push("#BMB_viewBookmarksToolbar + menuseparator");
+            h_rules.push("#panelMenu_viewBookmarksToolbar");
         }
 
         if (vbs === false && vbt === false) {
-            src = src + "#panelMenu_viewBookmarksToolbar + toolbarseparator {display: none !important;}" + "\n";
+            h_rules.push("#panelMenu_viewBookmarksToolbar + toolbarseparator");
         }
 
         var ub = this.prefs.getBoolPref("unsorted-bookmarks");
         if (ub === false) {
-            src = src + "#BMB_unsortedBookmarks, #panelMenu_unsortedBookmarks {display: none !important;}" + "\n";
+            h_rules.push("#BMB_unsortedBookmarks");
+            h_rules.push("#panelMenu_unsortedBookmarks");
         }
 
         if (bt === false && ub === false) {
-            src = src + "#BMB_unsortedBookmarks + menuseparator {display: none !important;}" + "\n";
-            src = src + "#panelMenu_unsortedBookmarks + toolbarseparator {display: none !important;}" + "\n";
+            h_rules.push("#BMB_unsortedBookmarks + menuseparator");
+            h_rules.push("#panelMenu_unsortedBookmarks + toolbarseparator");
         }
 
         var sab = this.prefs.getIntPref("show-all-bookmarks");
         if (sab === 2) {
-            src = src + "#BMB_bookmarksShowAll, #panelMenu_showAllBookmarks {display: none !important;}" + "\n";
+            h_rules.push("#BMB_bookmarksShowAll");
+            h_rules.push("#panelMenu_showAllBookmarks");
             src = src + ".cui-widget-panel > .panel-arrowcontainer > .panel-arrowcontent {padding-bottom: 4px !important;}" + "\n";
         }
         else if (sab === 1) {
-            src = src + "#BMB_bookmarksShowAll .menu-accel-container {display: none !important;}" + "\n";
+            h_rules.push("#BMB_bookmarksShowAll .menu-accel-container");
             src = src + "#BMB_bookmarksShowAll { text-align: center; -moz-margin-start: -18px !important;}" + "\n";
         }
 
         if (this.prefs.getBoolPref("bookmark-this-page") === false) {
-            src = src + "#panelMenuBookmarkThisPage {display: none !important;}" + "\n";
-            src = src + "#panelMenuBookmarkThisPage + toolbarseparator {display: none !important;}" + "\n";
+            h_rules.push("#panelMenuBookmarkThisPage");
+            h_rules.push("#panelMenuBookmarkThisPage + toolbarseparator");
         }
 
+        src = src + h_rules.join(", ");
+        src = src + " {display: none !important;}";
         src = src + STYLESHEET_FOOTER;
+
         return "data:text/css;charset=utf-8," + encodeURIComponent(src);
     },
 
