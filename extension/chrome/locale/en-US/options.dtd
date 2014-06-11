@@ -4,6 +4,7 @@
 
 <!ENTITY panelmenu.label            "For Panel Menu only">
 <!ENTITY duplicatetop.label         "Duplicate item at the top">
+<!ENTITY subfolders.label           "Inside subfolders">
 
 <!ENTITY viewbookmarkssidebar.label "View Bookmarks Sidebar">
 <!ENTITY subscribetothispage.label  "Subscribe to This Page">
@@ -15,3 +16,4 @@
 <!ENTITY showlabelonly.label        "Show label only (without keyboard shortcut)">
 <!ENTITY hideall.label              "Hide all">
 <!ENTITY bookmarkthispage.label     "Bookmark This Page">
+<!ENTITY openallintabs.label        "Open All in Tabs">

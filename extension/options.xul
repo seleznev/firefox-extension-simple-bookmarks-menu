@@ -31,4 +31,6 @@
   </setting>
   <setting pref="extensions.simple-bookmarks-menu.bookmark-this-page"
            type="bool" title="&bookmarkthispage.label;" desc="&panelmenu.label;"/>
+  <setting pref="extensions.simple-bookmarks-menu.open-all-in-tabs"
+           type="bool" title="&openallintabs.label;" desc="&subfolders.label;"/>
 </vbox>

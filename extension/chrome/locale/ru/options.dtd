@@ -4,6 +4,7 @@
 
 <!ENTITY panelmenu.label            "Доступно, только если кнопка находится в меню">
 <!ENTITY duplicatetop.label         "Продублированный наверху пункт">
+<!ENTITY subfolders.label           "В подпапках">
 
 <!ENTITY viewbookmarkssidebar.label "Показать боковую панель закладок">
 <!ENTITY subscribetothispage.label  "Подписаться на ленты новостей">
@@ -15,3 +16,4 @@
 <!ENTITY showlabelonly.label        "Скрыть только комбинацию клавиш">
 <!ENTITY hideall.label              "Скрыть совсем">
 <!ENTITY bookmarkthispage.label     "Добавить страницу">
+<!ENTITY openallintabs.label        "Открыть всё во вкладках">

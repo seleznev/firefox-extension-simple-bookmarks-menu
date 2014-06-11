@@ -21,6 +21,7 @@ const DefaultPrefs = {
     "unsorted-bookmarks": false,
     "show-all-bookmarks": 1,
     "bookmark-this-page": true,
+    "open-all-in-tabs": false,
 }
 
 var SimpleBookmarksMenu = {
@@ -133,6 +134,11 @@ var SimpleBookmarksMenu = {
         if (this.prefs.getBoolPref("bookmark-this-page") === false) {
             h_rules.push("#panelMenuBookmarkThisPage");
             h_rules.push("#panelMenuBookmarkThisPage + toolbarseparator");
+        }
+
+        if (this.prefs.getBoolPref("open-all-in-tabs") === false) {
+            h_rules.push("#BMB_bookmarksPopup .openintabs-menuitem");
+            src = src + "#BMB_bookmarksPopup menupopup[placespopup=true] > hbox > .popup-internal-box > .arrowscrollbox-scrollbox > .scrollbox-innerbox {padding-bottom: 4px !important;}" + "\n";
         }
 
         src = src + h_rules.join(", ");

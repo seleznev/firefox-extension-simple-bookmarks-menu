@@ -15,3 +15,5 @@ Simple add-on for Mozilla Firefox that hides unnecessary items in the bookmarks 
 * Unsorted Bookmarks
 
 * Show All Bookmarks
+
+* Open All in Tabs
