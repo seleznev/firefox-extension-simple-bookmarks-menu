@@ -1,0 +1,19 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY panelmenu.label            "Jedynie dla panelu menu">
+<!ENTITY duplicatetop.label         "Duplikuj element na górze">
+<!ENTITY subfolders.label           "Wewnątrz podfolderów">
+
+<!ENTITY viewbookmarkssidebar.label "Wyświetl panel zakładek">
+<!ENTITY subscribetothispage.label  "Subskrybuj tą stronę">
+<!ENTITY bookmarkstoolbar.label     "Pasek zakładek">
+<!ENTITY viewbookmarkstoolbar.label "View Bookmarks Toolbar">
+<!ENTITY unsortedbookmarks.label    "Zakładki nieprzypisane">
+<!ENTITY showallbookmarks.label     "Pokaż wszystkie zakładki">
+<!ENTITY default.label              "Domyślnie">
+<!ENTITY showlabelonly.label        "Pokaż jedynie tekst (bez skrótów klawiszy)">
+<!ENTITY hideall.label              "Ukryj wszystkie">
+<!ENTITY bookmarkthispage.label     "Dodaj do zakładek">
+<!ENTITY openallintabs.label        "Otwórz wszystkie w kartach">
