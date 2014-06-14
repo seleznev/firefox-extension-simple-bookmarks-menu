@@ -17,6 +17,9 @@
         <em:name>Simple bookmarks menu</em:name>
         <em:description>Скрывает ненужные пункты в меню закладок.</em:description>
       </Description>
+    </em:localized>
+	
+    <em:localized>
       <Description em:locale="pl">
         <em:name>Simple bookmarks menu</em:name>
         <em:description>Ukrywa niepotrzebne elementy w menu zakładek.</em:description>

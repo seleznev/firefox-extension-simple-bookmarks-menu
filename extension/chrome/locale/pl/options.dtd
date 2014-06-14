@@ -9,11 +9,11 @@
 <!ENTITY viewbookmarkssidebar.label "Wyświetl panel zakładek">
 <!ENTITY subscribetothispage.label  "Subskrybuj tą stronę">
 <!ENTITY bookmarkstoolbar.label     "Pasek zakładek">
-<!ENTITY viewbookmarkstoolbar.label "View Bookmarks Toolbar">
+<!ENTITY viewbookmarkstoolbar.label "Pokaż pasek zakładek">
 <!ENTITY unsortedbookmarks.label    "Zakładki nieprzypisane">
 <!ENTITY showallbookmarks.label     "Pokaż wszystkie zakładki">
 <!ENTITY default.label              "Domyślnie">
-<!ENTITY showlabelonly.label        "Pokaż jedynie tekst (bez skrótów klawiszy)">
+<!ENTITY showlabelonly.label        "Pokaż jedynie tekst (bez skrótów klawiszowych)">
 <!ENTITY hideall.label              "Ukryj wszystkie">
 <!ENTITY bookmarkthispage.label     "Dodaj do zakładek">
 <!ENTITY openallintabs.label        "Otwórz wszystkie w kartach">
