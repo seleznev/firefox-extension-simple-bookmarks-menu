@@ -26,6 +26,13 @@
       </Description>
     </em:localized>
 
+    <em:localized>
+      <Description em:locale="uk">
+        <em:name>Simple bookmarks menu</em:name>
+        <em:description>Ховає зайві елементи меню закладок.</em:description>
+      </Description>
+    </em:localized>
+
     <em:bootstrap>true</em:bootstrap>
 
     <em:targetApplication>
