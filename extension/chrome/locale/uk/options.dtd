@@ -1,0 +1,19 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY panelmenu.label            "Тільки для кнопки в панелі меню">
+<!ENTITY duplicatetop.label         "Дубльований пункт згори">
+<!ENTITY subfolders.label           "В підкаталогах">
+
+<!ENTITY viewbookmarkssidebar.label "Показати бічну панель закладок">
+<!ENTITY subscribetothispage.label  "Підписатися на стрічку новин">
+<!ENTITY bookmarkstoolbar.label     "Панель закладок">
+<!ENTITY viewbookmarkstoolbar.label "Показати панель закладок">
+<!ENTITY unsortedbookmarks.label    "Несортовані закладки">
+<!ENTITY showallbookmarks.label     "Показати всі закладки">
+<!ENTITY default.label              "За замовчуванням">
+<!ENTITY showlabelonly.label        "Сховати тільки комбінації клавіш">
+<!ENTITY hideall.label              "Сховати назовсім">
+<!ENTITY bookmarkthispage.label     "Закласти цю сторінку">
+<!ENTITY openallintabs.label        "Відкрити у вкладках всі">
