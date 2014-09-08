@@ -127,8 +127,10 @@ var SimpleBookmarksMenu = {
             src = src + ".cui-widget-panel > .panel-arrowcontainer > .panel-arrowcontent {padding-bottom: 4px !important;}" + "\n";
         }
         else if (sab === 1) {
+            h_rules.push("#BMB_bookmarksShowAll .menu-iconic-left");
             h_rules.push("#BMB_bookmarksShowAll .menu-accel-container");
-            src = src + "#BMB_bookmarksShowAll { text-align: center; -moz-margin-start: -18px !important;}" + "\n";
+            src = src + "#BMB_bookmarksShowAll .menu-text { padding-left: 0 !important; padding-right: 0 !important;}" + "\n";
+            src = src + "#BMB_bookmarksShowAll .menu-iconic-text { text-align: center; margin-left: 0 !important; margin-right: 0 !important;}" + "\n";
         }
 
         if (this.prefs.getBoolPref("bookmark-this-page") === false) {
