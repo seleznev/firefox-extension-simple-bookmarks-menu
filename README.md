@@ -2,18 +2,20 @@
 
 Simple add-on for Mozilla Firefox that hides unnecessary items in the bookmarks menu:
 
-* Bookmark This Page
+* View Bookmarks Sidebar;
 
-* View Bookmarks Sidebar
+* Show All Bookmarks (duplicate button in Firefox 30+);
 
-* View Bookmarks Toolbar
+* Subscribe to This Page;
 
-* Subscribe to This Page
+* Bookmarks Toolbar;
 
-* Bookmarks Toolbar
+* View Bookmarks Toolbar;
 
-* Unsorted Bookmarks
+* Unsorted Bookmarks;
 
-* Show All Bookmarks
+* Show All Bookmarks;
 
-* Open All in Tabs
+* Bookmark This Page;
+
+* Open All in Tabs.
