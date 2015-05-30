@@ -14,6 +14,7 @@ const STYLESHEET_FOOTER = "}";
 
 const DefaultPrefs = {
     "view-bookmarks-sidebar": false,
+    "view-pocket-list": false,
     "show-all-bookmarks-top": false,
     "subscribe-to-this-page": false,
     "bookmarks-toolbar": false,
@@ -80,6 +81,13 @@ var SimpleBookmarksMenu = {
             h_rules.push("#BMB_viewBookmarksSidebar");
             h_rules.push("#BMB_viewBookmarksSidebar + menuseparator");
             h_rules.push("#panelMenu_viewBookmarksSidebar");
+        }
+
+        if (this.prefs.getBoolPref("view-pocket-list") === false) {
+            h_rules.push("#BMB_pocket");
+            h_rules.push("#BMB_pocket + menuseparator");
+            h_rules.push("#panelMenu_pocket");
+            h_rules.push("#panelMenu_pocket + toolbarseparator");
         }
 
         var sbt = this.prefs.getBoolPref("show-all-bookmarks-top");

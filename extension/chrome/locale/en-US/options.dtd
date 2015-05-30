@@ -7,6 +7,7 @@
 <!ENTITY subfolders.label           "Inside subfolders">
 
 <!ENTITY viewbookmarkssidebar.label "View Bookmarks Sidebar">
+<!ENTITY viewpocketlist.label       "View Pocket List">
 <!ENTITY subscribetothispage.label  "Subscribe to This Page">
 <!ENTITY bookmarkstoolbar.label     "Bookmarks Toolbar">
 <!ENTITY viewbookmarkstoolbar.label "View Bookmarks Toolbar">
