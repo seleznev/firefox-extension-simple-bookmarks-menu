@@ -19,6 +19,7 @@ const DefaultPrefs = {
     "bookmarks-toolbar": false,
     "view-bookmarks-toolbar": false,
     "unsorted-bookmarks": false,
+    "reading-list": false,
     "show-all-bookmarks": 1,
     "bookmark-this-page": true,
     "open-all-in-tabs": false,
@@ -106,7 +107,7 @@ var SimpleBookmarksMenu = {
             h_rules.push("#BMB_viewBookmarksToolbar");
             h_rules.push("#BMB_viewBookmarksToolbar + menuseparator");
             h_rules.push("#panelMenu_viewBookmarksToolbar");
-            if (vbs === false && sbt === false) {
+            if (vbs === false) {
                 h_rules.push("#panelMenu_viewBookmarksToolbar + toolbarseparator");
             }
         }
@@ -118,6 +119,13 @@ var SimpleBookmarksMenu = {
                 h_rules.push("#BMB_unsortedBookmarks + menuseparator");
                 h_rules.push("#panelMenu_unsortedBookmarks + toolbarseparator");
             }
+        }
+
+        if (this.prefs.getBoolPref("reading-list") === false) {
+            h_rules.push("#BMB_readingList");
+            h_rules.push("#BMB_readingList + menuseparator");
+            h_rules.push("#panelMenu_viewReadingListSidebar");
+            h_rules.push("#panelMenu_viewReadingListSidebar + toolbarseparator");
         }
 
         var sab = this.prefs.getIntPref("show-all-bookmarks");

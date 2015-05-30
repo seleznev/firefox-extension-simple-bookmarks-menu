@@ -19,6 +19,8 @@
            type="bool" title="&viewbookmarkstoolbar.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.unsorted-bookmarks"
            type="bool" title="&unsortedbookmarks.label;"/>
+  <setting pref="extensions.simple-bookmarks-menu.reading-list"
+           type="bool" title="&readinglist.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.show-all-bookmarks"
            type="radio" title="&showallbookmarks.label;">
     <radiogroup>

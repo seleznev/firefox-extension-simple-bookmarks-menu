@@ -11,6 +11,7 @@
 <!ENTITY bookmarkstoolbar.label     "Pasek zakładek">
 <!ENTITY viewbookmarkstoolbar.label "Pokaż pasek zakładek">
 <!ENTITY unsortedbookmarks.label    "Zakładki nieprzypisane">
+<!ENTITY readinglist.label          "Reading List">
 <!ENTITY showallbookmarks.label     "Pokaż wszystkie zakładki">
 <!ENTITY default.label              "Domyślnie">
 <!ENTITY showlabelonly.label        "Pokaż jedynie tekst (bez skrótów klawiszowych)">

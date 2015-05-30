@@ -11,6 +11,7 @@
 <!ENTITY bookmarkstoolbar.label     "Bookmarks Toolbar">
 <!ENTITY viewbookmarkstoolbar.label "View Bookmarks Toolbar">
 <!ENTITY unsortedbookmarks.label    "Unsorted Bookmarks">
+<!ENTITY readinglist.label          "Reading List">
 <!ENTITY showallbookmarks.label     "Show All Bookmarks">
 <!ENTITY default.label              "Default">
 <!ENTITY showlabelonly.label        "Show label only (without keyboard shortcut)">
