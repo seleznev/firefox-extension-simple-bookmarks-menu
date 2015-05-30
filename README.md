@@ -6,6 +6,8 @@ Simple add-on for Mozilla Firefox that hides unnecessary items in the bookmarks 
 
 * Show All Bookmarks (duplicate button in Firefox 30+);
 
+* View Pocket List;
+
 * Subscribe to This Page;
 
 * Bookmarks Toolbar;
@@ -13,6 +15,8 @@ Simple add-on for Mozilla Firefox that hides unnecessary items in the bookmarks 
 * View Bookmarks Toolbar;
 
 * Unsorted Bookmarks;
+
+* Reading List;
 
 * Show All Bookmarks;
 
