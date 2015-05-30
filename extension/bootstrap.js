@@ -90,8 +90,7 @@ var SimpleBookmarksMenu = {
             h_rules.push("#panelMenu_pocket + toolbarseparator");
         }
 
-        var sbt = this.prefs.getBoolPref("show-all-bookmarks-top");
-        if (sbt === false) {
+        if (this.prefs.getBoolPref("show-all-bookmarks-top") === false) {
             h_rules.push("#BMB_bookmarksShowAllTop");
             if (vbs === false) {
                 h_rules.push("#BMB_bookmarksShowAllTop + menuseparator");
