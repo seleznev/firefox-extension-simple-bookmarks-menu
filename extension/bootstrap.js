@@ -87,8 +87,10 @@ var SimpleBookmarksMenu = {
         if (this.prefs.getBoolPref("view-pocket-list") === false) {
             h_rules.push("#BMB_pocket");
             h_rules.push("#BMB_pocket + menuseparator");
+            h_rules.push("#BMB_pocketSeparator");
             h_rules.push("#panelMenu_pocket");
             h_rules.push("#panelMenu_pocket + toolbarseparator");
+            h_rules.push("#panelMenu_pocketSeparator");
         }
 
         if (this.prefs.getBoolPref("show-all-bookmarks-top") === false) {
