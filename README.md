@@ -8,6 +8,8 @@ Simple add-on for Mozilla Firefox that hides unnecessary items in the bookmarks 
 
 * View Pocket List;
 
+* Recently Bookmarked;
+
 * Subscribe to This Page;
 
 * Bookmarks Toolbar;

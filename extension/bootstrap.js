@@ -16,6 +16,7 @@ const DefaultPrefs = {
     "view-bookmarks-sidebar": false,
     "view-pocket-list": false,
     "show-all-bookmarks-top": false,
+    "recent-bookmarks": false,
     "subscribe-to-this-page": false,
     "bookmarks-toolbar": false,
     "view-bookmarks-toolbar": false,
@@ -97,6 +98,23 @@ var SimpleBookmarksMenu = {
             }
         }
 
+        if (this.prefs.getBoolPref("recent-bookmarks") === false) {
+            // FIXME: I didn't find a better way.
+            h_rules.push("#BMB_recentBookmarks");
+            h_rules.push("#BMB_recentBookmarks + menuseparator");
+            h_rules.push("#BMB_recentBookmarks + .bookmark-item");
+            h_rules.push("#BMB_recentBookmarks + .bookmark-item + menuseparator");
+            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item");
+            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + menuseparator");
+            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item");
+            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item + menuseparator");
+            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item");
+            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item + menuseparator");
+            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item");
+            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item + menuseparator");
+        }
+
+        // Removed in Fx 47
         if (this.prefs.getBoolPref("subscribe-to-this-page") === false) {
             h_rules.push("#BMB_subscribeToPageMenuitem");
             h_rules.push("#BMB_subscribeToPageMenuitem + menuseparator");

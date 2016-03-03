@@ -13,6 +13,8 @@
            type="bool" title="&viewpocketlist.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.show-all-bookmarks-top"
            type="bool" title="&showallbookmarks.label;" desc="&duplicatetop.label;"/>
+  <setting pref="extensions.simple-bookmarks-menu.recent-bookmarks"
+           type="bool" title="&recentbookmarks.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.subscribe-to-this-page"
            type="bool" title="&subscribetothispage.label;"/>
   <setting pref="extensions.simple-bookmarks-menu.bookmarks-toolbar"

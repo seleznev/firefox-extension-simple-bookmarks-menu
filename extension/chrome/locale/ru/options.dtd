@@ -8,6 +8,7 @@
 
 <!ENTITY viewbookmarkssidebar.label "Показать боковую панель закладок">
 <!ENTITY viewpocketlist.label       "Показать список Pocket">
+<!ENTITY recentbookmarks.label      "Recently Bookmarked">
 <!ENTITY subscribetothispage.label  "Подписаться на ленты новостей">
 <!ENTITY bookmarkstoolbar.label     "Панель закладок">
 <!ENTITY viewbookmarkstoolbar.label "Показать панель закладок">
