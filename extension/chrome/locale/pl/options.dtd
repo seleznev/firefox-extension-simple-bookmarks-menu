@@ -9,11 +9,10 @@
 <!ENTITY viewbookmarkssidebar.label "Wyświetl panel zakładek">
 <!ENTITY viewpocketlist.label       "View Pocket List">
 <!ENTITY recentbookmarks.label      "Recently Bookmarked">
-<!ENTITY subscribetothispage.label  "Subskrybuj tą stronę">
 <!ENTITY bookmarkstoolbar.label     "Pasek zakładek">
 <!ENTITY viewbookmarkstoolbar.label "Pokaż pasek zakładek">
-<!ENTITY unsortedbookmarks.label    "Zakładki nieprzypisane">
-<!ENTITY readinglist.label          "Reading List">
+<!ENTITY unsortedbookmarks.label    "Other Bookmarks">
+<!ENTITY mobilebookmarks.label      "Mobile Bookmarks">
 <!ENTITY showallbookmarks.label     "Pokaż wszystkie zakładki">
 <!ENTITY default.label              "Domyślnie">
 <!ENTITY showlabelonly.label        "Pokaż jedynie tekst (bez skrótów klawiszowych)">

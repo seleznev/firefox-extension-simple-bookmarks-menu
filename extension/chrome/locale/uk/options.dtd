@@ -9,11 +9,10 @@
 <!ENTITY viewbookmarkssidebar.label "Показати бічну панель закладок">
 <!ENTITY viewpocketlist.label       "View Pocket List">
 <!ENTITY recentbookmarks.label      "Recently Bookmarked">
-<!ENTITY subscribetothispage.label  "Підписатися на стрічку новин">
 <!ENTITY bookmarkstoolbar.label     "Панель закладок">
 <!ENTITY viewbookmarkstoolbar.label "Показати панель закладок">
-<!ENTITY unsortedbookmarks.label    "Несортовані закладки">
-<!ENTITY readinglist.label          "Reading List">
+<!ENTITY unsortedbookmarks.label    "Other Bookmarks">
+<!ENTITY mobilebookmarks.label      "Mobile Bookmarks">
 <!ENTITY showallbookmarks.label     "Показати всі закладки">
 <!ENTITY default.label              "За замовчуванням">
 <!ENTITY showlabelonly.label        "Сховати тільки комбінації клавіш">

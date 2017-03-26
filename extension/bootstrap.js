@@ -16,12 +16,9 @@ const DefaultPrefs = {
     "view-bookmarks-sidebar": false,
     "view-pocket-list": false,
     "show-all-bookmarks-top": false,
-    "recent-bookmarks": false,
-    "subscribe-to-this-page": false,
     "bookmarks-toolbar": false,
     "view-bookmarks-toolbar": false,
     "unsorted-bookmarks": false,
-    "reading-list": false,
     "show-all-bookmarks": 1,
     "bookmark-this-page": true,
     "open-all-in-tabs": false,
@@ -97,31 +94,8 @@ var SimpleBookmarksMenu = {
             h_rules.push("#BMB_bookmarksShowAllTop");
             if (vbs === false) {
                 h_rules.push("#BMB_bookmarksShowAllTop + menuseparator");
+                h_rules.push("#BMB_recentBookmarks[hidden=\"true\"] + menuseparator");
             }
-        }
-
-        if (this.prefs.getBoolPref("recent-bookmarks") === false) {
-            // FIXME: I didn't find a better way.
-            h_rules.push("#BMB_recentBookmarks");
-            h_rules.push("#BMB_recentBookmarks + menuseparator");
-            h_rules.push("#BMB_recentBookmarks + .bookmark-item");
-            h_rules.push("#BMB_recentBookmarks + .bookmark-item + menuseparator");
-            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item");
-            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + menuseparator");
-            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item");
-            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item + menuseparator");
-            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item");
-            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item + menuseparator");
-            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item");
-            h_rules.push("#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item + menuseparator");
-        }
-
-        // Removed in Fx 47
-        if (this.prefs.getBoolPref("subscribe-to-this-page") === false) {
-            h_rules.push("#BMB_subscribeToPageMenuitem");
-            h_rules.push("#BMB_subscribeToPageMenuitem + menuseparator");
-            h_rules.push("#BMB_subscribeToPageMenupopup");
-            h_rules.push("#BMB_subscribeToPageMenupopup + menuseparator");
         }
 
         var bt = this.prefs.getBoolPref("bookmarks-toolbar");
@@ -139,20 +113,25 @@ var SimpleBookmarksMenu = {
             }
         }
 
-        if (this.prefs.getBoolPref("unsorted-bookmarks") === false) {
+        var ub = this.prefs.getBoolPref("unsorted-bookmarks");
+        if (ub === false) {
             h_rules.push("#BMB_unsortedBookmarks");
             h_rules.push("#panelMenu_unsortedBookmarks");
             if (bt === false) {
-                h_rules.push("#BMB_unsortedBookmarks + menuseparator");
                 h_rules.push("#panelMenu_unsortedBookmarks + toolbarseparator");
             }
         }
 
-        if (this.prefs.getBoolPref("reading-list") === false) {
-            h_rules.push("#BMB_readingList");
-            h_rules.push("#BMB_readingList + menuseparator");
-            h_rules.push("#panelMenu_viewReadingListSidebar");
-            h_rules.push("#panelMenu_viewReadingListSidebar + toolbarseparator");
+        if (this.prefs_bookmarks.getPrefType("showMobileBookmarks") == this.prefs_bookmarks.PREF_BOOL) {
+            if (this.prefs_bookmarks.getBoolPref("showMobileBookmarks") === false &&
+                    bt === false && ub === false) {
+                h_rules.push("#BMB_mobileBookmarks + menuseparator");
+            }
+        }
+        else {
+            if (bt === false && ub === false) {
+                h_rules.push("#BMB_unsortedBookmarks + menuseparator");
+            }
         }
 
         var sab = this.prefs.getIntPref("show-all-bookmarks");
@@ -192,15 +171,21 @@ var SimpleBookmarksMenu = {
                        .getService(Components.interfaces.nsIPrefService)
                        .getBranch(this.PREF_BRANCH);
 
+        this.prefs_bookmarks = Cc["@mozilla.org/preferences-service;1"]
+                                 .getService(Components.interfaces.nsIPrefService)
+                                 .getBranch("browser.bookmarks.");
+
         this.stylesheet = this.genStyleSheet();
         this.loadStyle(this.stylesheet);
 
         this.prefs.addObserver("", this, false);
+        this.prefs_bookmarks.addObserver("", this, false);
     },
 
     uninit: function() {
         this.unloadStyle(this.stylesheet);
         this.prefs.removeObserver("", this);
+        this.prefs_bookmarks.removeObserver("", this);
     },
 }
 

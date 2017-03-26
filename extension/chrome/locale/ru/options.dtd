@@ -9,11 +9,10 @@
 <!ENTITY viewbookmarkssidebar.label "Показать боковую панель закладок">
 <!ENTITY viewpocketlist.label       "Показать список Pocket">
 <!ENTITY recentbookmarks.label      "Recently Bookmarked">
-<!ENTITY subscribetothispage.label  "Подписаться на ленты новостей">
 <!ENTITY bookmarkstoolbar.label     "Панель закладок">
 <!ENTITY viewbookmarkstoolbar.label "Показать панель закладок">
-<!ENTITY unsortedbookmarks.label    "Неподшитые закладки">
-<!ENTITY readinglist.label          "Список для чтения">
+<!ENTITY unsortedbookmarks.label    "Other Bookmarks">
+<!ENTITY mobilebookmarks.label      "Mobile Bookmarks">
 <!ENTITY showallbookmarks.label     "Показать все закладки">
 <!ENTITY default.label              "По умолчанию">
 <!ENTITY showlabelonly.label        "Скрыть только комбинацию клавиш">
