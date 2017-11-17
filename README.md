@@ -1,4 +1,6 @@
-# Simple bookmarks menu
+# Simple bookmarks menu (discontinued)
+
+:warning: This extension doesn't work on Firefox 57 and later.
 
 Simple add-on for Mozilla Firefox that hides unnecessary items in the bookmarks menu:
 
